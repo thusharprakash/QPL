@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'KlavikaLight';
+    src: url('http://www.indiansuperleague.com/fonts/klavika-light.eot');
+    src: url('http://www.indiansuperleague.com/fonts/klavika-light.eot') format('embedded-opentype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-light.woff') format('woff'),
+         url('http://www.indiansuperleague.com/fonts/klavika-light.ttf') format('truetype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-light.svg#KlavikaLight') format('svg');
+}
+
+@font-face {
+    font-family: 'KlavikaRegular';
+    src: url('http://www.indiansuperleague.com/fonts/klavika-regular.eot');
+    src: url('http://www.indiansuperleague.com/fonts/klavika-regular.eot') format('embedded-opentype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-regular.woff') format('woff'),
+         url('http://www.indiansuperleague.com/fonts/klavika-regular.ttf') format('truetype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-regular.svg#KlavikaRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'KlavikaMedium';
+    src: url('http://www.indiansuperleague.com/fonts/klavika-medium.eot');
+    src: url('http://www.indiansuperleague.com/fonts/klavika-medium.eot') format('embedded-opentype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-medium.woff') format('woff'),
+         url('http://www.indiansuperleague.com/fonts/klavika-medium.ttf') format('truetype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-medium.svg#KlavikaMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'KlavikaBold';
+    src: url('http://www.indiansuperleague.com/fonts/klavika-bold.eot');
+    src: url('http://www.indiansuperleague.com/fonts/klavika-bold.eot') format('embedded-opentype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-bold.woff') format('woff'),
+         url('http://www.indiansuperleague.com/fonts/klavika-bold.ttf') format('truetype'),
+         url('http://www.indiansuperleague.com/fonts/klavika-bold.svg#KlavikaBold') format('svg');
+}

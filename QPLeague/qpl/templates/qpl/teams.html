@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<h2> {{ team.name }} </h2>
+	<img src= "{{team.logo.url}}" hieght="100px", width="150px" >
+	<h3> Players </h3>
+	<ul>
+	{% for player in players %}
+
+	<li>	<a href="/player/{{player.name}}/details"> {{player.name}} </a> </li>
+	{% endfor %}
+	</ul>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Player Profile </h1>
+
+<div class="pure-table pure-table-horizontal"><table style="table-layout: fixed; width: 372px; margin: 0 auto; ">
+<colgroup>
+<col style="width: 153px">
+<col style="width: 219px">
+</colgroup>
+   <tr>
+	  <td colspan="2" align="center"><img src="{{player.image.url}}" height="250px" width="250px"> </td>
+  </tr>
+   <tr>
+    <td>Name</td>
+    <td>{{player.name}}</td>
+  </tr>
+<tr>
+    <td>Goals</td>
+    <td>{{player.goals}}</td>
+  </tr>
+  <tr>
+    <td>Designation</td>
+    <td>{{player.designation}}</td>
+  </tr>
+  <tr>
+    <td>Team</td>
+    <td>{{player.team}}</td>
+  </tr>
+  
+{% if player.is_captain %}
+<tr>
+    <td>Status</td>
+    
+<td>Captain</td>
+  </tr>
+{% endif %}
+</table></div>
+
+
+{% endblock %}
+

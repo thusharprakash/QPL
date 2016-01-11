@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{%block content%}
+<h2> Last Game Details </h2>
+<div class="pure-table pure-table-horizontal">
+	
+<h3> {{last_game.team1}} Vs {{last_game.team2}}</h3>
+{% if last_game.goal1 > last_game.goal2 %}
+{{last_game.team1}} Won against {{last_game.team2}}</br>
+for {{difference}} goals. [{{last_game.goal1}} - {{last_game.goal2}}]
+<br/>
+	@ {{last_game.date}}
+	{% else %}
+	{{last_game.team2}} Won against {{last_game.team1}} for {{difference}} goals. [{{last_game.goal2}} - {{last_game.goal1}}]<br/>
+	       @ {{last_game.date}}
+	       {% endif %}
+       </div>
+<h2> Top Player </h2>
+<div class="pure-table pure-table-horizontal"><table style="table-layout: fixed; width: 372px; margin: 0 auto; ">
+<colgroup>
+<col style="width: 153px">
+<col style="width: 219px">
+</colgroup>
+   <tr>
+	  <td colspan="2" align="center"><img src="{{top.image.url}}" height="250px" width="250px"> </td>
+  </tr>
+   <tr>
+    <td>Name</td>
+    <td>{{top.name}}</td>
+  </tr>
+<tr>
+    <td>Goals</td>
+    <td>{{top.goals}}</td>
+  </tr>
+  <tr>
+    <td>Designation</td>
+    <td>{{top.designation}}</td>
+  </tr>
+  <tr>
+    <td>Team</td>
+    <td>{{top.team}}</td>
+  </tr>
+  
+{% if top.is_captain %}
+<tr>
+    <td>Status</td>
+    
+<td>Captain</td>
+  </tr>
+{% endif %}
+</table></div>
+
+
+{%endblock%}
