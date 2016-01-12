@@ -22,7 +22,7 @@ app.controller('firstDialogCtrl', ['$scope', 'ngDialog', function($scope, ngDial
 	$scope.openPlayer = function(playerName){
 		ngDialog.open({
 			template: 'player/'+playerName+'/details',
-			closeByDocument: false,
+			closeByDocument: true,
             className: 'ngdialog-theme-default',
             closeByEscape: true,
             showClose: true,
