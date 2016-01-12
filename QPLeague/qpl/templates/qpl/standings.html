@@ -1,0 +1,32 @@
+{% block content %}
+   
+<table class="table table-striped">
+ <tr>
+    <th></th>
+    <th class="tw50">Team </th>
+    <th class="tw10">Games Played </th>
+    <th class="tw10">Games Won</th>
+    <th class="tw10"> Games Defeated </th>
+    <th class="tw10">Goals Attained</th>
+    <th class="tw10">Goals Lost</th>
+    <th class="tw10">Goals Difference</th>
+    <th class="tw10">Points</th>
+  </tr>
+   {% for standing in standings_list %}
+
+  <tr>
+    <td class="match-title"> <img src="{{standing.team.logo.url}}" width="20px" height="20px"></td>
+    <td class="match-title"><a href="/teams/{{standing.team.name}}">{{standing.team.name}}</a></td>
+    <td class="match-title">{{standing.GP}}</td>
+    <td class="match-title">{{standing.GW}}</td>
+    <td class="match-title">{{standing.GD}}</td>
+    <td class="match-title">{{standing.GA}}</td>
+    <td class="match-title">{{standing.GL}}</td>
+    <td class="match-title">{{standing.diff}}</td> 
+    <td class="match-title">{{standing.P}}</td>
+
+  
+  </tr>
+{% endfor %}
+</table>
+    {% endblock %}

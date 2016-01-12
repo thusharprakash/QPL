@@ -1,0 +1,36 @@
+
+
+{%block content%}
+ <div class="bg-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <div class="row">
+              
+              <div class="col-sm-4 col-md-4">
+                <div class="match-club">
+                  <img src="{{last_game.team1.logo.url}}" alt="" height="150px" width="150px"/>
+                  <div class="club-name">{{last_game.team1}}</div>
+                </div>
+              </div>
+              
+              <div class="col-sm-4 col-md-4">
+                <div class="match-description">
+                  <!-- <div class="liga-name">12</div> -->
+                  <div class="liga-date">{{last_game.date}}</div>
+                  <div class="liga-vs">VS</div>
+                  <div class="liga-location">Zamorins School Ground, Calicut</div>
+                </div>
+              </div>
+              
+              <div class="col-sm-4 col-md-4">
+                <div class="match-club">
+                  <img src="{{last_game.team2.logo.url}}" alt="" height="150px" width="150px"/>
+                  <div class="club-name">{{last_game.team2}}</div>
+                </div>
+              </div>
+              
+            </div>
+
+
+{% endblock%}
