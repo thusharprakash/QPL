@@ -3,6 +3,7 @@ $(document).ready(function(){
 	"use strict";
 	$("#standings").load("/standings");
 	$("#index").load("/indx");
+	$("#fixture").load("/fixture");
 	
 	/* =================================
 	BANNER ROTATOR IMAGE 
