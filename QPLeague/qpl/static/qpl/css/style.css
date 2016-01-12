@@ -2283,8 +2283,23 @@ p.help-block.text-danger li {
 		  box-shadow: none;
 }
 
+.teamname{
+	cursor: pointer;
+}
 
+.playername{
+	cursor: pointer;
+	text-align: center;
+}
 
+.align-center{
+	text-align: center;
+}
+
+.align-center-image{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media (max-width: 1199px) {
 	

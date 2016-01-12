@@ -1,13 +1,15 @@
 
 {% block content %}
 
-	<h2> {{ team.name }} </h2>
-	<img src= "{{team.logo.url}}" hieght="100px", width="150px" >
-	<h3> Players </h3>
+	<h2 class="align-center"> <b>{{ team.name }}</b> </h2>
+	<div class="col-span-2" align="center">
+	<img  src= "{{team.logo.url}}" hieght="250px", width="250px">
+	</div>
+	<h3 class="align-center"> Players </h3>
 	<ul>
 	{% for player in players %}
 
-	<li>	<a href="/player/{{player.name}}/details"> {{player.name}} </a> </li>
+	<li>	<div class="playername" ng-click="openPlayer('{{player.name}}')"> {{player.name}} </div> </li>
 	{% endfor %}
 	</ul>
 {% endblock %}

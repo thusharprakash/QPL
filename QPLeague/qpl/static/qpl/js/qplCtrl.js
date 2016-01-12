@@ -1,10 +1,10 @@
 var app = angular.module('qpl',['ngDialog']);
 
-app.controller('qplController', function($scope,ngDialog,$compile) {
+app.controller('qplController', ['$scope', 'ngDialog', '$compile', function($scope,ngDialog,$compile) {
 	$scope.openTeam = function(teamName){
-		console.log(teamName);
 		ngDialog.open({
 			template: 'teams/'+teamName,
+			controller: 'firstDialogCtrl',
 			closeByDocument: false,
             className: 'ngdialog-theme-default',
             closeByEscape: true,
@@ -16,4 +16,18 @@ app.controller('qplController', function($scope,ngDialog,$compile) {
 	window.onload = function(){
 		$compile(document.getElementsByTagName('body')[0])($scope);
 	};
-});
+}]);
+
+app.controller('firstDialogCtrl', ['$scope', 'ngDialog', function($scope, ngDialog){
+	$scope.openPlayer = function(playerName){
+		ngDialog.open({
+			template: 'player/'+playerName+'/details',
+			closeByDocument: false,
+            className: 'ngdialog-theme-default',
+            closeByEscape: true,
+            showClose: true,
+            scope: $scope
+		});
+	};
+	
+}]);
