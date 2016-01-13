@@ -9,7 +9,7 @@
 	<ul>
 	{% for player in players %}
 
-	<li>	<div class="playername" ng-click="openPlayer('{{player.name}}')"> {{player.name}} </div> </li>
+	<li>	<div class="playername" ng-click="openPlayer('{{player.id}}')"> {{player.name}} </div> </li>
 	{% endfor %}
 	</ul>
 {% endblock %}

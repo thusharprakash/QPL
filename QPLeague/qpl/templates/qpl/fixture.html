@@ -3,23 +3,23 @@
 
 
 
-<div class=""><table class="pure-table pure-table-horizontal" style="margin 0 auto;">
+<div class=""><table class="table table-striped" style="margin 0 auto;">
 
 
-  <tr>
+  <!-- <tr>
     <th></th>
     <th></th>
     <th></th>
     <th></th>
     <th></th>
-  </tr>
+  </tr> -->
    {% for match in fix %}
 
   <tr>
     <td> <img src="{{match.team1.logo.url}}" width="20px" height="20px"></td>
-    <td>{{match.team1}} [{{match.team1.goals}}]</td>
+    <td>{{match.team1}} [{{match.goal1}}]</td>
     <td><img src="{{match.team2.logo.url}}" width="20px" height="20px"></td>
-    <td>{{match.team2}} [{{match.team2.goals}}]</td>
+    <td>{{match.team2}} [{{match.goal2}}]</td>
     <td>{{match.date}}</td>
   </tr>
 {% endfor %}

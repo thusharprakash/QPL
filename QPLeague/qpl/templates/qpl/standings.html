@@ -14,10 +14,10 @@
    {% for standing in standings_list %}
 
   <tr>
-    <td class="match-title"> <img width="20px" height="20px"></td>
+    <td class="match-title"> <img src="{{standing.team.logo.url}}" width="20px" height="20px"></td>
 
     <td class="match-title">
-    <div class="teamname" ng-click="openTeam('{{standing.team.name}}')">{{standing.team.name}}</div></td>
+    <div class="teamname" ng-click="openTeam('{{standing.team.id}}')">{{standing.team.name}}</div></td>
     <td class="match-title">{{standing.GP}}</td>
     <td class="match-title">{{standing.GW}}</td>
     <td class="match-title">{{standing.GD}}</td>

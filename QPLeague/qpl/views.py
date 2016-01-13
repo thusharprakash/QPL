@@ -33,7 +33,7 @@ def indx(request):
 
 def details(request,name):
     try:
-        player = Player.objects.get(name=name)
+        player = Player.objects.get(id=name)
         context = {
                 "player":player,
                 }
@@ -42,7 +42,7 @@ def details(request,name):
         raise Http404("Player Does not exist ")
 def teams(request,name):
     try:
-        team = Team.objects.get(name=name)
+        team = Team.objects.get(id=name)
         players = Player.objects.filter(team=team)
         context = { 'team':team, 'players':players}
         return render(request, 'qpl/teams.html', context)
